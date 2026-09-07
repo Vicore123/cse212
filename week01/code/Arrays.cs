@@ -8,16 +8,14 @@ public static class Arrays
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     public static double[] MultiplesOf(double number, int length)
     {
-        // Creating an array to store the multiples
+        
         double[] multiples = new double[length];
 
-        // Looping through the array and adding the multiples to the array
         for (int i = 0; i < length; i++)
         {
             multiples[i] = number*(i + 1);
         }
 
-        // Returning the array
         return multiples;
     }
 
@@ -30,17 +28,13 @@ public static class Arrays
     /// </summary>
     public static void RotateListRight(List<int> data, int amount)
     {
-        // Divide the list into two parts
         int divideData = data.Count - amount;
         
-        // Get the two parts of the list
         List<int> end = data.GetRange(divideData, amount);
         List<int> start = data.GetRange(0, divideData);
 
-        // Clear the original list
         data.Clear();
 
-        // Add the two parts back in the new order
         data.AddRange(end);
         data.AddRange(start);
     }
