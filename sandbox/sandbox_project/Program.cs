@@ -4,13 +4,20 @@ public class Program
 {
     static void Main(string[] args)
     {
-        var Lista = new int[3];
-        Lista[0] = 1;
-        Lista[1] = 3;
-        foreach (var item in Lista)
+        string text = "abcdefgca";
+
+        HashSet<char> seen = new HashSet<char>();
+        foreach (char c in text)
         {
-            Console.WriteLine(item);
+            if (seen.Contains(c))
+            {
+                Console.WriteLine($"Duplicate character found: {c}");
+                break;
+            }
+            
+           seen.Add(c);
         }
         
     }
+
 }

@@ -1,4 +1,4 @@
-﻿/// <summary>
+﻿﻿/// <summary>
 /// Maintain a Customer Service Queue.  Allows new customers to be 
 /// added and allows customers to be serviced.
 /// </summary>
@@ -12,14 +12,10 @@ public class CustomerService {
 
         // Test 1
         // Scenario: 
-
         // Expected Result: 
-
         Console.WriteLine("Test 1");
-        
 
         // Defect(s) Found: 
-
 
         Console.WriteLine("=================");
 
