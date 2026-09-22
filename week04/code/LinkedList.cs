@@ -38,6 +38,7 @@ public class LinkedList : IEnumerable<int>
             _head = newNode;
             _tail = newNode;
         }
+        
         else
         {
             newNode.Prev = _tail;
